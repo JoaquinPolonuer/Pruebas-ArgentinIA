@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-image = cv2.imread("diario2.png")
+image = cv2.imread("imagenes/diario2.png")
 
 img = image.copy()
 
