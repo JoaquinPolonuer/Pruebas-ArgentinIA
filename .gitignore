@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 classifier_data/
+logs/
