@@ -13,7 +13,7 @@ for image_path, label_path in zip(images_paths, labels_paths):
     image = cv2.imread(os.path.join('data/images', image_path))
     
     try:
-        with open(os.path.join('data/labels', label_path)) as f:
+        with open(os.path.join('data/json_labels', label_path)) as f:
             labels = json.load(f)
     except FileNotFoundError:
         print(f"Label file not found for {image_path}! Skipping...")
