@@ -1,0 +1,9 @@
+train: ./diarios/train.txt 
+val: ./diarios/val.txt
+test: ./diarios/test.txt
+
+# number of classes
+nc: 4
+
+# class names
+names: ["copete", "cuerpo", "epigrafe", "titulo"]

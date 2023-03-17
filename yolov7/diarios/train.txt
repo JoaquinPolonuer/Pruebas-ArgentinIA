@@ -1,0 +1,5 @@
+./images/train/diario4.png
+./images/train/diario3.png
+./images/train/20191231AmericaBig.jpg
+./images/train/16034337b0.jpg
+./images/train/20190721Big.jpg
