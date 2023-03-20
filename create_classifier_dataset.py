@@ -3,8 +3,8 @@ import json
 import cv2 
 import uuid
 
-if not os.path.exists("classifier_data/"):
-    os.mkdir("classifier_data/")
+if not os.path.exists("clasificacion/classifier_data/"):
+    os.mkdir("clasificacion/classifier_data/")
 
 images_paths = os.listdir('data/images')
 labels_paths = [f"{image_path.split('.')[0]}.json" for image_path in images_paths]
@@ -23,10 +23,10 @@ for image_path, label_path in zip(images_paths, labels_paths):
         label = shape['label']
         (x_min, y_min), (x_max, y_max) = shape['points']
         x_min, y_min, x_max, y_max = int(x_min), int(y_min), int(x_max), int(y_max)
-        if not os.path.exists(os.path.join('classifier_data/', label)):
-            os.mkdir(os.path.join('classifier_data/', label))
+        if not os.path.exists(os.path.join('clasificacion/classifier_data/', label)):
+            os.mkdir(os.path.join('clasificacion/classifier_data/', label))
         
         name = f"{i}{image_path}"
 
-        cv2.imwrite(os.path.join('classifier_data/', label, name), image[y_min:y_max, x_min:x_max])
+        cv2.imwrite(os.path.join('clasificacion/classifier_data/', label, name), image[y_min:y_max, x_min:x_max])
     

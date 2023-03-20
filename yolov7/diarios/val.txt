@@ -1,2 +1,0 @@
-./images/val/diario2.png
-./images/val/diario.png

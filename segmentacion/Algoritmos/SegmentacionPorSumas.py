@@ -68,7 +68,7 @@ def mostrar_resultado(original_image, vertical_seps, horizontal_seps_by_column):
     plt.show()
 
 if __name__ == "__main__":
-    image = cv2.imread("imagenes/diario.png")
+    image = cv2.imread("../../data/images/diario2.png")
 
     vertical_seps, horizontal_seps_by_column = segmentacion_por_sumas(image)
 

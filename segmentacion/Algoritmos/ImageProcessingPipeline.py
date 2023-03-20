@@ -10,7 +10,6 @@ def grayscale():
         return image
     return func
 
-
 def binarize(perc_threshold):
     def func(image):
         perc = np.percentile(image, perc_threshold)
