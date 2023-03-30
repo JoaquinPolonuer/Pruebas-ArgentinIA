@@ -1,3 +1,4 @@
+import sys
 import time
 from pathlib import Path
 
@@ -6,6 +7,7 @@ import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
 
+sys.path.insert(0, 'yolov7')
 from models.experimental import attempt_load
 from utils.datasets import LoadStreams, LoadImages
 from utils.general import check_img_size, check_requirements, check_imshow, non_max_suppression, apply_classifier, \
