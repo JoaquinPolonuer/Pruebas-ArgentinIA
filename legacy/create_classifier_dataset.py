@@ -6,14 +6,14 @@ import uuid
 if not os.path.exists("clasificacion/classifier_data/"):
     os.mkdir("clasificacion/classifier_data/")
 
-images_paths = os.listdir('data/images')
+images_paths = os.listdir('../data/images')
 labels_paths = [f"{image_path.split('.')[0]}.json" for image_path in images_paths]
 
 for image_path, label_path in zip(images_paths, labels_paths):
-    image = cv2.imread(os.path.join('data/images', image_path))
+    image = cv2.imread(os.path.join('../data/images', image_path))
     
     try:
-        with open(os.path.join('data/json_labels', label_path)) as f:
+        with open(os.path.join('../data/json_labels', label_path)) as f:
             labels = json.load(f)
     except FileNotFoundError:
         print(f"Label file not found for {image_path}! Skipping...")

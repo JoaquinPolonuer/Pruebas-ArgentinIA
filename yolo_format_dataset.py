@@ -104,7 +104,7 @@ with open("diarios/test.txt", "w") as f:
 
 shutil.rmtree("diarios/json_labels")
 
-if os.path.exists("segmentacion/YOLO/yolov7/diarios"):
-    shutil.rmtree("segmentacion/YOLO/yolov7/diarios")
+if os.path.exists("YOLO/yolov7/diarios"):
+    shutil.rmtree("YOLO/yolov7/diarios")
     
-shutil.move("diarios", "segmentacion/YOLO/yolov7")
+shutil.move("diarios", "YOLO/yolov7")
