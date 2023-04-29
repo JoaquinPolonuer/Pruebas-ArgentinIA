@@ -130,3 +130,7 @@ dmypy.json
 
 classifier_data/
 logs/
+
+YOLO/data_prepare/imgs/
+YOLO/data_prepare/jsons/
+YOLO/data_prepare/output/
