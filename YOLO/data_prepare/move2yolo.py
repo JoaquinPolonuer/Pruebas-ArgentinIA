@@ -3,8 +3,8 @@ import json
 import cv2
 import shutil
 
-images_path = "imgs/"
-labels_path = "output/"
+images_path = "/content/drive/MyDrive/ArgentinIA/data_yolo/imgs/"
+labels_path = "/content/drive/MyDrive/ArgentinIA/data_yolo/output/"
 
 if not os.path.exists("diarios"):
     os.mkdir("diarios")
