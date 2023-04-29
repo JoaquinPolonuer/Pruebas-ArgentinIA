@@ -3,7 +3,7 @@ val: ./diarios/val.txt
 test: ./diarios/test.txt
 
 # number of classes
-nc: 10
+nc: 11
 
 # class names
 names: ["Diario","Fecha","Volanta","Título","Copete","Destacado","Cuerpo","Fotografía","Epígrafe","Firma","Página"]
