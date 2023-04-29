@@ -2,11 +2,11 @@ import os
 import json
 import cv2
 
-path_to_json = "content/drive/MyDrive/ArgentinIA/data_yolo/jsons/"
+path_to_json = "/content/drive/MyDrive/ArgentinIA/data_yolo/jsons/"
 
-path_to_dst = "content/drive/MyDrive/ArgentinIA/data_yolo/output/"
+path_to_dst = "/content/drive/MyDrive/ArgentinIA/data_yolo/output/"
 
-path_to_imgs = "content/drive/MyDrive/ArgentinIA/data_yolo/imgs/"
+path_to_imgs = "/content/drive/MyDrive/ArgentinIA/data_yolo/imgs/"
 
 classes = {
     "Diario": 0,
